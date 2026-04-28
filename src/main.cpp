@@ -49,7 +49,23 @@ int main(){
 
 
 std::vector<std::vector<int>> multMatricies(const std::vector<std::vector<int>> matA, const std::vector<std::vector<int>> matB){
+    
     std::vector<std::vector<int>> AB;
+
+    int s = matA.size();
+    int temp_val = 0;
+
+    std::vector<std::vector<int>> c(2, std::vector<int>(2, 0));
+
+    for(int i=0;i<s;i++){
+        for(int j=0;j<s;j++){
+            temp_val = matA[i][j] * matB[i][j];
+            temp_val += matA[i][j] * matB[j][i];
+            std::cout << temp_val;
+            c[i][i] = temp_val;
+
+        }
+    }
 
     return AB;
 }
@@ -72,8 +88,8 @@ std::vector<std::vector<int>> addMatricies(const std::vector<std::vector<int>>& 
         for(int j = 0; j<s;j++){
             temporaryRow.push_back(matA[i][j] + matB[i][j]);
             if (temporaryRow.size() == 2) {
-                AB.push_back(temporaryRow);     // Ship it to the main matrix!
-                temporaryRow.clear();           // Empty the row to start fresh for the next one
+                AB.push_back(temporaryRow);     // to the main matrix
+                temporaryRow.clear();           // Empty the row 
             }
 
         }
