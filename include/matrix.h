@@ -19,8 +19,12 @@ public:
     void set_matrix(){}
 
     //getter
-    void get_rows(){}
-    void get_columns(){}
+    int get_rows(){
+        return row;
+    }
+    int get_columns(){
+        return col;
+    }
     
 
 

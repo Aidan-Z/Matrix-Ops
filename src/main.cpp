@@ -27,7 +27,8 @@ int main(){
     // }
 
 
-    Matrix m1(2,2);
+    Matrix m(2,2);
+    std::cout << m.get_rows();
 
     return 0;
 }
