@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include "include/matrix.h"
 
 // using vectors for matricies - to run without issues use below for compile: 
 // clang++ -std=c++11 diag.cpp
