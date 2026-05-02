@@ -2,27 +2,25 @@
 #include <vector>    
 #include <iostream>
 
-template <typename T>
+
 class Matrix{
 private:
     size_t row,col;
-  
+    std::vector<std::vector<double>> data;
+    
 
 public:
     // constrcutor init. data w/ writing code in body of func
-    Matrix(size_t rows, size_t column): row(rows), col(column), data(rows * columns){}
+    // data(rows * columns)
+    Matrix(size_t rows, size_t columns): row(rows), col(columns){}
 
 
     //setter
-    void set_matrix(){
+    void set_matrix(){}
 
-    }
     //getter
-    void get_matrix(){
-
-    }
-    
-
+    void get_rows(){}
+    void get_columns(){}
     
 
 

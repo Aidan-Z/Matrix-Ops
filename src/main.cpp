@@ -1,48 +1,33 @@
 #include <iostream>
-#include "include/matrix.h"
+#include "../include/matrix.h" 
 
 // using vectors for matricies - to run without issues use below for compile: 
-// clang++ -std=c++11 diag.cpp
-
-/*
-
-add
-sub
-multiply
+// clang++ -std=c++11 src/main.cpp
 
 
 
-
-sub
-get eigen -> find det
-find det
-
-multiply vector
-multiply matrix
-
-diagonalize 
-
-*/
 std::vector<std::vector<int>> addMatricies(const std::vector<std::vector<int>>& matA, const std::vector<std::vector<int>>& matB);
 std::vector<std::vector<int>> multMatricies(const std::vector<std::vector<int>> matA, const std::vector<std::vector<int>> matB);
 
 
 int main(){
 
-    std::vector<std::vector<int>> A = {{1, 1},{4, 1}};    
-    std::vector<std::vector<int>> B = {{2, 3},{1, 2}};                                        
+    // std::vector<std::vector<int>> A = {{1, 1},{4, 1}};    
+    // std::vector<std::vector<int>> B = {{2, 3},{1, 2}};                                        
 
-    // add matricies:
-    std::vector<std::vector<int>> AB = addMatricies(A,B);
+    // // add matricies:
+    // std::vector<std::vector<int>> AB = addMatricies(A,B);
 
-    // print add:
-    for(int i = 0; i<AB.size();i++){
-        for(int j=0;j<AB.size();j++){
-            std::cout << AB[i][j] << std::endl;
+    // // print add:
+    // for(int i = 0; i<AB.size();i++){
+    //     for(int j=0;j<AB.size();j++){
+    //         std::cout << AB[i][j] << std::endl;
 
-        }
-    }
+    //     }
+    // }
 
+
+    Matrix m1(2,2);
 
     return 0;
 }
